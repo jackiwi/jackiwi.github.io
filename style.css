@@ -49,6 +49,7 @@
   background-color: inherit;
   font-family: "Maven Pro"; /* Important for vertical align on mobile phones */
   margin: 0; /* Important for vertical align on mobile phones */
+  cursor: default;
 }
 .dropdown-content {
   display: none;
@@ -240,4 +241,18 @@ video {
   font-size: 16px;
   margin: 4px;
   resize: none;
+}
+
+.icon, .iconNotLink{
+  color: #848177;
+  padding: 10px;
+  font-size: 7vw;
+}
+.icon:hover, .mailtext:hover{
+  color: rgb(255, 210, 76);
+  text-decoration: none;
+}
+.mailtext{
+  font-size: 4vw;
+  color: #848177;
 }
