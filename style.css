@@ -177,6 +177,8 @@ video {
   transition: 0.3s;
 }
 .myImg:hover {
+  outline: 7px solid rgb(255, 210, 76);
+  outline-offset: -7px;
   opacity: 0.7;
 }
 .modal { /* The Modal (background) */
@@ -255,4 +257,39 @@ video {
 .mailtext{
   font-size: 4vw;
   color: #848177;
+  padding-top: 20px;
+}
+
+section{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  overflow: hidden;
+  width: 100%;
+  color: #fff;
+}
+section h2{
+  font-size: 48px;
+}
+section div{
+  background-color: rgba(0,0,0,0.5);
+}
+section.chardes1{
+  background-image: url("/images/chardes/me0.jpg");
+}
+section.chardes2{
+  background-image: url("/images/chardes/stars0.jpg");
+}
+section.chardes3{
+  background-image: url("/images/chardes/spirits0.png");
+}
+.chargallery{
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 50px;
+}
+.sectioncontent{
+  padding-top: 50px;
+  font-size: 18px;
 }
