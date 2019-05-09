@@ -75,9 +75,22 @@
   display: block;
 }
 
+.main-container {
+ min-height: 100vh; /* will cover the 100% of viewport */
+ overflow: hidden;
+ display: block;
+ position: relative;
+ padding-bottom: 70px; /* height of your footer */
+}
+.inner-container{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 .footer {
+  position: absolute;
   left: 0;
   bottom: 0;
+  height: 70px;
   width: 100%;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -112,7 +125,10 @@ hr{
   padding-bottom: 12px;
 }
 .post{
-  padding: 60px 60px;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .button{
   //background-color: #fff0bf;
@@ -132,7 +148,6 @@ hr{
   display: flex;
   flex-wrap: wrap;
   padding: 0 4px;
-  padding-top: 30px;
 }
 .column{
   flex: 25%;
