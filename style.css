@@ -75,11 +75,21 @@
   display: block;
 }
 
+.footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #f2efe8;
+  color: rgb(51,50,49);
+  text-align: center;
+}
+
 body{
   overflow-x: hidden;
   background-color: #fffcf4;
   font-family: "Maven Pro", sans-serif;
-  padding-bottom: 30px;
 }
 h1{
   color: #848177;
@@ -247,10 +257,13 @@ video {
 
 .icon, .iconNotLink{
   color: #848177;
-  padding: 10px;
   font-size: 7vw;
+  padding: 10px;
 }
-.icon:hover, .mailtext:hover{
+.smallicon{
+  color: rgb(51,50,49);
+}
+.icon:hover, .mailtext:hover, .smallicon:hover{
   color: rgb(255, 210, 76);
   text-decoration: none;
 }
