@@ -195,6 +195,11 @@ video {
   max-width: 100%;
   height: auto;
 }
+.responsiveimgsmall{
+  width: 500px;
+  max-width: 100%;
+  height: auto;
+}
 
 .myImg {
   border-radius: 5px;
@@ -298,7 +303,10 @@ section{
   color: #fff;
 }
 section h2{
-  font-size: 48px;
+  font-size: 5vw;
+}
+section p{
+  font-size: 2vw;
 }
 section div{
   background-color: rgba(0,0,0,0.5);
@@ -320,4 +328,9 @@ section.chardes3{
 .sectioncontent{
   padding-top: 50px;
   font-size: 18px;
+}
+.aside{
+  background-color: rgb(255, 210, 76);
+  padding: 10px 10px;
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
 }
