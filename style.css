@@ -8,7 +8,7 @@
 .navbar .navbar-brand:focus{
   background-color: transparent;
   color: #000000;
-  cursor: default;
+  //cursor: default;
   font-size: 28px;
   font-stretch: condensed;
   text-transform: uppercase;
@@ -75,6 +75,17 @@
   display: block;
 }
 
+@media only screen and (max-width: 700px){ /* 100% Image Width on Smaller Screens */
+  .navbar .navbar-brand,
+  .navbar .navbar-brand:hover,
+  .navbar .navbar-brand:focus{
+    font-size: 20px;
+  }
+  .navfiller {
+    padding-top: 150px;
+  }
+}
+
 .main-container {
  min-height: 100vh; /* will cover the 100% of viewport */
  overflow: hidden;
@@ -112,6 +123,35 @@ h1{
 hr{
   border: 3px solid rgba(255, 210, 76, 0.8);
 }
+::selection {
+  background: rgba(255, 228, 147, 0.8); /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: rgba(255, 228, 147, 0.8); /* Gecko Browsers */
+}
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background: #848177;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 210, 76, 0.8);
+}
+
+.textflavor{
+  color: rgb(255, 210, 76);
+}
+.exampleform{
+  border: 1px solid rgb(255, 210, 76);
+  min-width: 250px;
+  max-width: 500px;
+  display: inline-block;
+  padding: 10px;
+}
+.postcontent{
+  text-align: center;
+}
 
 .bodyheader{
   background-color: #f2efe8;
@@ -121,12 +161,20 @@ hr{
   text-align: right;
   font-style: italic;
 }
+@media only screen and (max-width: 700px){ /* 100% Image Width on Smaller Screens */
+  .bodyheader{
+    padding-right: 60px;
+  }
+  h1 {
+    font-size: 40px;
+  }
+}
 .postheader{
   padding-bottom: 12px;
 }
 .post{
-  padding-left: 60px;
-  padding-right: 60px;
+  padding-left: 5vw;
+  padding-right: 5vw;
   padding-top: 30px;
   padding-bottom: 30px;
 }
@@ -201,6 +249,8 @@ video {
   width: 500px;
   max-width: 100%;
   height: auto;
+  -webkit-user-select:none;
+  -webkit-touch-callout:none;
 }
 
 .myImg {
@@ -285,7 +335,10 @@ video {
 .smallicon{
   color: rgb(51,50,49);
 }
-.icon:hover, .mailtext:hover, .smallicon:hover{
+.indextext{
+  color: #fff;
+}
+.icon:hover, .mailtext:hover, .smallicon:hover, .indextext:hover{
   color: rgb(255, 210, 76);
   text-decoration: none;
 }
@@ -322,6 +375,9 @@ section.chardes2{
 section.chardes3{
   background-image: url("/images/chardes/spirits0.png");
 }
+section.index1{
+  background-image: url("/images/about/honestwork.jpg");
+}
 .chargallery{
   padding-left: 50px;
   padding-right: 50px;
@@ -329,6 +385,7 @@ section.chardes3{
 }
 .sectioncontent{
   padding-top: 50px;
+  padding-bottom: 20px;
   font-size: 18px;
 }
 .aside{
