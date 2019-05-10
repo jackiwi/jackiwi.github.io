@@ -388,6 +388,14 @@ section.index1{
   padding-bottom: 20px;
   font-size: 18px;
 }
+.about-blurb{
+  padding: 200px 0;
+}
+@media only screen and (max-width: 700px){ /* 100% Image Width on Smaller Screens */
+  .about-blurb{
+    padding: 10px 0;
+  }
+}
 .aside{
   background-color: rgb(255, 210, 76);
   padding: 10px 10px;
