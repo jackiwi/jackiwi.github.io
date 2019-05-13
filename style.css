@@ -364,7 +364,6 @@ section p{
   font-size: 2vw;
 }
 section div{
-  background-color: rgba(0,0,0,0.5);
 }
 section.chardes1{
   background-image: url("/images/chardes/me0.jpg");
@@ -384,6 +383,7 @@ section.index1{
   padding-bottom: 50px;
 }
 .sectioncontent{
+  background-color: rgba(0,0,0,0.5);
   padding-top: 50px;
   padding-bottom: 20px;
   font-size: 18px;
